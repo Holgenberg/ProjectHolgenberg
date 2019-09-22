@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import './Home.css'
-import desktopImage from '../images/home-background.jpg';
+import desktopImage from '../images/desktop-background.jpg';
 
 export class Home extends Component {
     displayName = Home.name
