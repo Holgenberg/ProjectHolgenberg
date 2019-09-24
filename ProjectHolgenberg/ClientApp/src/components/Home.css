@@ -22,6 +22,9 @@
     justify-content: flex-start;
     align-items: center;
     padding: 40px;
+
+    font-family:'Comfortaa', cursive;
+    color: white;
 }
 
 @media (min-width: 650px ) {
