@@ -8,10 +8,10 @@ export class Home extends Component {
     render() {
         return (
             <div className="Home" style={{ backgroundImage: `url(${desktopImage})` }}>
-                <link href="https://fonts.googleapis.com/css?family=Comfortaa&display=swap" rel="stylesheet"></link>
+                <link href="https://fonts.googleapis.com/css?family=Roboto+Slab&display=swap" rel="stylesheet"></link>
                 <div className="Home-content">
                     <h1>Alexei Holgate</h1>
-                    <p>Software Developer</p>
+                    <p>Developer, Traveller, Engineer, Photographer, Guitarist</p>
                 </div>
             </div>
         );
