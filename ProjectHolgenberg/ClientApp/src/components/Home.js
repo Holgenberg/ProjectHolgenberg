@@ -11,7 +11,7 @@ export class Home extends Component {
                 <link href="https://fonts.googleapis.com/css?family=Roboto+Slab&display=swap" rel="stylesheet"></link>
                 <div className="Home-content">
                     <h1>Alexei Holgate</h1>
-                    <p>Developer, Traveller, Engineer, Photographer, Guitarist</p>
+                    <p>Developer, Traveller, Engineer, Photographer, Guitarist from Newcastle upon Tyne.</p>
                 </div>
             </div>
         );
