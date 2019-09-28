@@ -28,6 +28,7 @@ export class Home extends Component {
     render() {
         return (
             <div className="Home" style={{ backgroundImage: `url(${desktopImage})` }}>
+                <link href="https://fonts.googleapis.com/css?family=Roboto+Slab&display=swap" rel="stylesheet"></link>
                 <CheeseburgerMenu
                     isOpen={this.state.menuOpen}
                     closeCallback={this.closeMenu.bind(this)}>
@@ -47,8 +48,6 @@ export class Home extends Component {
                         animationDuration={0.5}
                     />
                 </div>
-
-                <link href="https://fonts.googleapis.com/css?family=Roboto+Slab&display=swap" rel="stylesheet"></link>
                 <div className="Home-content">
                     <h1>Alexei Holgate</h1>
                     <p>Developer, Traveller, Engineer, Photographer, Guitarist from Newcastle upon Tyne.</p>
