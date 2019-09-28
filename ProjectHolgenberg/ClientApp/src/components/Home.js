@@ -34,17 +34,19 @@ export class Home extends Component {
                     <MenuContent closeCallback={this.closeMenu.bind(this)} />
                 </CheeseburgerMenu>
 
-                <HamburgerMenu
-                    isOpen={this.state.menuOpen}
-                    menuClicked={this.openMenu.bind(this)}                    
-                    width={32}
-                    height={24}
-                    strokeWidth={3}
-                    rotate={0}
-                    color='white'
-                    borderRadius={0}
-                    animationDuration={0.5}
-                />
+                <div style={{ paddingLeft: 5, paddingTop: 8 }}>
+                    <HamburgerMenu
+                        isOpen={this.state.menuOpen}
+                        menuClicked={this.openMenu.bind(this)}
+                        width={32}
+                        height={24}
+                        strokeWidth={3}
+                        rotate={0}
+                        color='white'
+                        borderRadius={0}
+                        animationDuration={0.5}
+                    />
+                </div>
 
                 <link href="https://fonts.googleapis.com/css?family=Roboto+Slab&display=swap" rel="stylesheet"></link>
                 <div className="Home-content">
