@@ -1,7 +1,5 @@
 import React, { Component } from 'react';
-import { render } from 'react-dom';
 import './Home.css'
-import desktopImage from '../images/background.jpg';
 import CheeseburgerMenu from 'cheeseburger-menu'
 import HamburgerMenu from 'react-hamburger-menu'
 import NavigationMenuContent from './NavigationMenuContent'
@@ -27,7 +25,7 @@ export class Home extends Component {
 
     render() {
         return (
-            <div className="Home" style={{ backgroundImage: `url(${desktopImage})` }}>
+            <div className="Home">
                 <link href="https://fonts.googleapis.com/css?family=Roboto+Slab&display=swap" rel="stylesheet"></link>
                 <CheeseburgerMenu
                     isOpen={this.state.menuOpen}
@@ -35,7 +33,7 @@ export class Home extends Component {
                     <NavigationMenuContent closeCallback={this.closeMenu.bind(this)} />
                 </CheeseburgerMenu>
 
-                <div style={{ paddingLeft: 5, paddingTop: 8 }}>
+                <div className="hamburger-menu">
                     <HamburgerMenu
                         isOpen={this.state.menuOpen}
                         menuClicked={this.openMenu.bind(this)}
@@ -48,6 +46,7 @@ export class Home extends Component {
                         animationDuration={0.5}
                     />
                 </div>
+
                 <div className="Home-content">
                     <h1>Alexei Holgate</h1>
                     <p>Developer, Traveller, Engineer, Photographer, Guitarist from Newcastle upon Tyne.</p>
