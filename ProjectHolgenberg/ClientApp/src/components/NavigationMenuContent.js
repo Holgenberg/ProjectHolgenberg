@@ -1,9 +1,9 @@
 ﻿import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 
-import './menuContent.css'
+import './NavigationMenuContent.css'
 
-class MenuContent extends Component {
+class NavigationMenuContent extends Component {
   constructor(props) {
     super(props)
 
@@ -31,8 +31,8 @@ class MenuContent extends Component {
   }
 }
 
-MenuContent.propTypes = {
+NavigationMenuContent.propTypes = {
     closeCallback: PropTypes.func.isRequired
 }
 
-export default MenuContent
+export default NavigationMenuContent

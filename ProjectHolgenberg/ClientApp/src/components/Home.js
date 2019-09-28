@@ -4,7 +4,7 @@ import './Home.css'
 import desktopImage from '../images/background.jpg';
 import CheeseburgerMenu from 'cheeseburger-menu'
 import HamburgerMenu from 'react-hamburger-menu'
-import MenuContent from './menuContent'
+import NavigationMenuContent from './NavigationMenuContent'
 
 export class Home extends Component {
     displayName = Home.name
@@ -31,7 +31,7 @@ export class Home extends Component {
                 <CheeseburgerMenu
                     isOpen={this.state.menuOpen}
                     closeCallback={this.closeMenu.bind(this)}>
-                    <MenuContent closeCallback={this.closeMenu.bind(this)} />
+                    <NavigationMenuContent closeCallback={this.closeMenu.bind(this)} />
                 </CheeseburgerMenu>
 
                 <div style={{ paddingLeft: 5, paddingTop: 8 }}>
