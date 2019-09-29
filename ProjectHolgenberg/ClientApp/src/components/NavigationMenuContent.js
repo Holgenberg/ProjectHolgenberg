@@ -1,28 +1,25 @@
 ﻿import React, { Component } from 'react';
 import PropTypes from 'prop-types';
+import { Router, Route, Link } from 'react-router-dom';
 
 import './NavigationMenuContent.css'
 
 class NavigationMenuContent extends Component {
-  constructor(props) {
-    super(props)
-  }
+    constructor(props) {
+        super(props)
+    }
 
-  render() {
-    return (
-      <div className="menu">
-        <div className="menu-item">
-          <a
-            href="/"
-            onClick={this.props.closeCallback}>
-            Home
-          </a>
-        </div>
+    render() {
+        return (
+            <div className="menu">
+                <div className="menu-item">
+                    <Link to="/" onClick={this.props.closeCallback}>Home</Link>
+                </div>
 
-        <p className="hint">Click outside the menu to close it, or swipe it closed on touch device</p>
-      </div>
-    )
-  }
+                <p className="hint">Click outside the menu to close it, or swipe it closed on touch device</p>
+            </div>
+        )
+    }
 }
 
 NavigationMenuContent.propTypes = {
