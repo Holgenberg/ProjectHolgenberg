@@ -25,6 +25,11 @@
     color: white;
 }
 
+.Menu-button-placement {
+    padding-left: 5px;
+    padding-top: 8px;
+}
+
 @media (min-width: 650px ) {
     .Home-content {
         align-items: flex-end;

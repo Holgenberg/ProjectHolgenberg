@@ -1,5 +1,6 @@
 ﻿.menu {
     font-family: 'Roboto Slab', serif;
+    color: black;
 }
 
 .menu-item {
@@ -33,9 +34,4 @@
 
 .hint {
     padding: .5rem 15px;
-}
-
-.hamburger-menu{
-    padding-left: 5px;
-    padding-top: 8px;
 }

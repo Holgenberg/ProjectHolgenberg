@@ -33,7 +33,7 @@ export class Home extends Component {
                     <NavigationMenuContent closeCallback={this.closeMenu.bind(this)} />
                 </CheeseburgerMenu>
 
-                <div className="hamburger-menu">
+                <div className="Menu-button-placement">
                     <HamburgerMenu
                         isOpen={this.state.menuOpen}
                         menuClicked={this.openMenu.bind(this)}
