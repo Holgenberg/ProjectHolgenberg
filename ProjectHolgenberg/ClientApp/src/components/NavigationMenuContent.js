@@ -13,9 +13,8 @@ class NavigationMenuContent extends Component {
       <div className="menu">
         <div className="menu-item">
           <a
-            href="https://github.com/Middlerun/cheeseburger-menu"
-            onClick={this.props.closeCallback}
-            target="_blank">
+            href="/"
+            onClick={this.props.closeCallback}>
             Home
           </a>
         </div>
