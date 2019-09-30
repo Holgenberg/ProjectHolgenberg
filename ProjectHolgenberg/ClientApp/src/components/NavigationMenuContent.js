@@ -1,6 +1,6 @@
 ﻿import React, { Component } from 'react';
 import PropTypes from 'prop-types';
-import { Router, Route, Link } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 
 import './NavigationMenuContent.css'
 
@@ -13,7 +13,7 @@ class NavigationMenuContent extends Component {
         return (
             <div className="menu">
                 <div className="menu-item">
-                    <Link to="/" onClick={this.props.closeCallback}>Home</Link>
+                    <Link to="/" onClick={this.props.closeCallback}>Home</Link>                    
                 </div>
 
                 <p className="hint">Click outside the menu to close it, or swipe it closed on touch device</p>
