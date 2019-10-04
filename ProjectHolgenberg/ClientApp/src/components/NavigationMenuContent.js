@@ -14,9 +14,10 @@ class NavigationMenuContent extends Component {
             <div className="menu">
                 <div className="menu-item">
                     <Link to="/" onClick={this.props.closeCallback}>Home</Link>
-                    <Link to="/portfolio/" onClick={this.props.closeCallback}>Portfolio</Link>
                 </div>
-
+                <div className="menu-item">
+                    <Link to="/portfolio/" onClick={this.props.closeCallback} className="menu-item">Portfolio</Link>
+                </div>
                 <p className="hint">Click outside the menu to close it, or swipe it closed on touch device</p>
             </div>
         )
