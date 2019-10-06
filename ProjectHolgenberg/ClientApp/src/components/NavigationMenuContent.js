@@ -7,17 +7,26 @@ import './NavigationMenuContent.css'
 class NavigationMenuContent extends Component {
     constructor(props) {
         super(props)
+
+        this.items = [
+            {
+                "to": "/",
+                "name": "Home"
+            },
+            {
+                "to": "/portfolio/",
+                "name": "Portfolio"
+            }
+        ];
     }
 
     render() {
         return (
             <div className="menu">
-                <div className="menu-item">
-                    <Link to="/" onClick={this.props.closeCallback}>Home</Link>
-                </div>
-                <div className="menu-item">
-                    <Link to="/portfolio/" onClick={this.props.closeCallback} className="menu-item">Portfolio</Link>
-                </div>
+                {this.items.map((link) =>
+                    <div className="menu-item">
+                        <Link to={link.to} onClick={this.props.closeCallback}>{link.name}</Link>
+                    </div>)}
                 <p className="hint">Click outside the menu to close it, or swipe it closed on touch device</p>
             </div>
         )
