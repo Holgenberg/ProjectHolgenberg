@@ -3,6 +3,10 @@ import './HamburgerMenu.css'
 import CheeseburgerMenu from 'cheeseburger-menu'
 import HamburgerMenu from 'react-hamburger-menu'
 import NavigationMenuContent from './NavigationMenuContent'
+import Container from 'react-bootstrap/Container'
+import Row from 'react-bootstrap/Row'
+import Col from 'react-bootstrap/Col'
+import Image from 'react-bootstrap/Image'
 
 export class Portfolio extends Component {
     displayName = Portfolio.name
@@ -46,6 +50,17 @@ export class Portfolio extends Component {
                         animationDuration={0.5}
                     />
                 </div>
+
+                <Container>
+                    <Row>
+                        <Col xs={6} md={4}>
+                            <Image src="holder.js/171x180" rounded />
+                        </Col>
+                        <Col xs={6} md={4}>
+                            <Image src="holder.js/171x180" roundedCircle />
+                        </Col>
+                    </Row>
+                </Container>
             </div>
         )
     }
