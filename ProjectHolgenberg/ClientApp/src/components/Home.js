@@ -1,5 +1,6 @@
-import React, { Component } from 'react';
+import React, { Component } from 'react'
 import './Home.css'
+import './HamburgerMenu.css'
 import CheeseburgerMenu from 'cheeseburger-menu'
 import HamburgerMenu from 'react-hamburger-menu'
 import NavigationMenuContent from './NavigationMenuContent'
@@ -33,7 +34,7 @@ export class Home extends Component {
                     <NavigationMenuContent closeCallback={this.closeMenu.bind(this)} />
                 </CheeseburgerMenu>
 
-                <div className="Menu-button-placement">
+                <div className="Hamburger-menu-button-placement ">
                     <HamburgerMenu
                         isOpen={this.state.menuOpen}
                         menuClicked={this.openMenu.bind(this)}
