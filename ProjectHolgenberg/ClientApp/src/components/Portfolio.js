@@ -7,6 +7,7 @@ import Container from 'react-bootstrap/Container'
 import Row from 'react-bootstrap/Row'
 import Col from 'react-bootstrap/Col'
 import Image from 'react-bootstrap/Image'
+import NexploreThumbnail from '../images/nexplore_thumbnail.jpg'
 
 export class Portfolio extends Component {
     displayName = Portfolio.name
@@ -54,10 +55,7 @@ export class Portfolio extends Component {
                 <Container>
                     <Row>
                         <Col xs={6} md={4}>
-                            <Image src="holder.js/171x180" rounded />
-                        </Col>
-                        <Col xs={6} md={4}>
-                            <Image src="holder.js/171x180" roundedCircle />
+                            <Image src={NexploreThumbnail} roundedCircle />
                         </Col>
                     </Row>
                 </Container>
