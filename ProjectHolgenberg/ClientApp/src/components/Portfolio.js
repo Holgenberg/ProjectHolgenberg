@@ -1,13 +1,11 @@
 ﻿import React, { Component } from 'react'
 import './HamburgerMenu.css'
+import './Portfolio.css'
 import CheeseburgerMenu from 'cheeseburger-menu'
 import HamburgerMenu from 'react-hamburger-menu'
 import NavigationMenuContent from './NavigationMenuContent'
-import Container from 'react-bootstrap/Container'
-import Row from 'react-bootstrap/Row'
-import Col from 'react-bootstrap/Col'
-import Image from 'react-bootstrap/Image'
 import NexploreThumbnail from '../images/nexplore_thumbnail.jpg'
+import CaseStudy from './CaseStudy'
 
 export class Portfolio extends Component {
     displayName = Portfolio.name
@@ -17,7 +15,7 @@ export class Portfolio extends Component {
 
         this.state = {
             menuOpen: false,
-        }
+        };
     }
 
     openMenu() {
@@ -30,7 +28,7 @@ export class Portfolio extends Component {
 
     render() {
         return (
-            <div>
+            <div className="Portfolio">
                 <link href="https://fonts.googleapis.com/css?family=Roboto+Slab&display=swap" rel="stylesheet"></link>
                 <CheeseburgerMenu
                     isOpen={this.state.menuOpen}
@@ -52,13 +50,10 @@ export class Portfolio extends Component {
                     />
                 </div>
 
-                <Container>
-                    <Row>
-                        <Col xs={6} md={4}>
-                            <Image src={NexploreThumbnail} roundedCircle />
-                        </Col>
-                    </Row>
-                </Container>
+                {/*<CaseStudy
+                    imagePosition="left"
+                    image={NexploreThumbnail}
+                />*/}
             </div>
         )
     }
