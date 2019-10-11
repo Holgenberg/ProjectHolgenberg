@@ -4,7 +4,7 @@ import './Portfolio.css'
 import CheeseburgerMenu from 'cheeseburger-menu'
 import HamburgerMenu from 'react-hamburger-menu'
 import NavigationMenuContent from './NavigationMenuContent'
-import NexploreThumbnail from '../images/nexplore_thumbnail.jpg'
+import NexploreThumbnail from '../images/nexgen_logo.png'
 import CaseStudy from './CaseStudy'
 
 export class Portfolio extends Component {
@@ -50,10 +50,10 @@ export class Portfolio extends Component {
                     />
                 </div>
 
-                {/*<CaseStudy
+                <CaseStudy
                     imagePosition="left"
                     image={NexploreThumbnail}
-                />*/}
+                />
             </div>
         )
     }
