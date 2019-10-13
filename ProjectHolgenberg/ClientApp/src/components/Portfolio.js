@@ -44,7 +44,7 @@ export class Portfolio extends Component {
                         height={24}
                         strokeWidth={3}
                         rotate={0}
-                        color='black'
+                        color='white'
                         borderRadius={0}
                         animationDuration={0.5}
                     />
