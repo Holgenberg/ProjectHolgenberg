@@ -2,7 +2,8 @@
 import Row from 'react-bootstrap/Row'
 import Col from 'react-bootstrap/Col'
 import Image from 'react-bootstrap/Image'
-import React, { Component } from 'react';
+import React, { Component } from 'react'
+import './CaseStudy.css'
 
 class CaseStudy extends Component {
     constructor(props) {
@@ -46,7 +47,7 @@ class CaseStudy extends Component {
 
         else {
             return (
-                <div>
+                <div className="centre">
                     <a href={this.props.referenceUrl}>
                         <Image src={this.props.image} rounded />
                     </a>
