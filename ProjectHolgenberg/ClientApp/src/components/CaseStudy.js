@@ -32,22 +32,26 @@ class CaseStudy extends Component {
 
         if (this.state.width > 425) {
             return (
-                <Container>
-                    <Row>
-                        <Col xs={6}>
-                            <Image src={this.props.image} rounded />
-                        </Col>
-                    </Row>
-                </Container>
+                <a href={this.props.referenceUrl}>
+                    <Container>
+                        <Row>
+                            <Col xs={6}>
+                                <Image src={this.props.image} rounded />
+                            </Col>
+                        </Row>
+                    </Container>
+                </a>
             )
         }
 
         else {
             return (
                 <div>
-                    <Image src={this.props.image} rounded />
+                    <a href={this.props.referenceUrl}>
+                        <Image src={this.props.image} rounded />
+                    </a>
                 </div>
-                )
+            )
         }
     }
 }

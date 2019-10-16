@@ -53,7 +53,8 @@ export class Portfolio extends Component {
                 <CaseStudy
                     imagePosition="left"
                     image={NexploreThumbnail}
-                />
+                    referenceUrl="https://www.lucionservices.com/services/lucions-online-risk-management-app-nexgen-integrated-with-bim-technology-allowing-clients-to-access-safety-hazards-information-in-3d-for-accurate-risk-management/"
+                    />
             </div>
         )
     }
