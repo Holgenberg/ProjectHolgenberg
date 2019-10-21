@@ -27,7 +27,7 @@ class NavigationMenuContent extends Component {
                         <Link to={link.to} onClick={this.props.closeCallback}>{link.name}</Link>
                     </div>
                 )}
-                <p className="hint">Click outside the menu to close it, or swipe it closed on touch device</p>
+                <p className="hint">Let's get to know eachother &#128516;</p>
             </div>
         )
     }
