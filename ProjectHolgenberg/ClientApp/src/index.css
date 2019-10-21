@@ -1,6 +1,8 @@
 body, html {
     height: 100%;
     margin: 0;    
+
+    font-size: medium;
 }
 
 @media (max-width: 767px) {
