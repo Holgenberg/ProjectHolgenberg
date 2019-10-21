@@ -33,15 +33,18 @@ class CaseStudy extends Component {
 
         if (this.state.width > 425) {
             return (
-                <a href={this.props.referenceUrl}>
+                <div>
                     <Container>
                         <Row>
-                            <Col xs={6}>
+                            <Col>
                                 <Image src={this.props.image} rounded />
+                            </Col>
+                            <Col>
+                                <p>Beep Boop</p>
                             </Col>
                         </Row>
                     </Container>
-                </a>
+                </div>
             )
         }
 

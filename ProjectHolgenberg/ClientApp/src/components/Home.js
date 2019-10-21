@@ -27,7 +27,6 @@ export class Home extends Component {
     render() {
         return (
             <div className="Home">
-                <link href="https://fonts.googleapis.com/css?family=Roboto+Slab&display=swap" rel="stylesheet"></link>
                 <CheeseburgerMenu
                     isOpen={this.state.menuOpen}
                     closeCallback={this.closeMenu.bind(this)}>
