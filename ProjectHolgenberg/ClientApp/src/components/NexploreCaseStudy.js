@@ -61,6 +61,7 @@ class NexploreCaseStudy extends Component {
                     <a href={nexploreLink}>
                         <Image src={NexGenLogo} rounded />
                     </a>
+                    <p className="nexplore-case-study-description">{caseStudyDescription}</p>
                 </div>
             )
         }

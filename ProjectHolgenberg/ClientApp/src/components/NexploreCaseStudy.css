@@ -3,8 +3,12 @@
 }
 
 .nexplore-case-study-description {
-    padding-top: 50px;
-
     font-family: 'Roboto Slab', serif;
     color: white;
+}
+
+@media only screen and (min-width: 426px){
+    .nexplore-case-study-description{
+        padding-top: 50px;
+    }
 }
