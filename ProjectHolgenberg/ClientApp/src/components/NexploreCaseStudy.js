@@ -46,7 +46,7 @@ class NexploreCaseStudy extends Component {
                         <Row>
                             <Col>
                                 <a href={nexploreLink}>
-                                    <Image src={NexGenLogo} rounded />
+                                    <Image src={NexGenLogo} roundedCircle />
                                 </a>
                             </Col>
                             <Col>
@@ -62,7 +62,7 @@ class NexploreCaseStudy extends Component {
             return (
                 <div className="centre">
                     <a href={nexploreLink}>
-                        <Image src={NexGenLogo} rounded />
+                        <Image src={NexGenLogo} roundedCircle />
                     </a>
                     <p className="nexplore-case-study-description">{caseStudyDescription}</p>
                 </div>
