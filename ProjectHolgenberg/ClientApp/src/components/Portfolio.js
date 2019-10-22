@@ -4,8 +4,7 @@ import './Portfolio.css'
 import CheeseburgerMenu from 'cheeseburger-menu'
 import HamburgerMenu from 'react-hamburger-menu'
 import NavigationMenuContent from './NavigationMenuContent'
-import NexploreThumbnail from '../images/nexgen_logo.png'
-import CaseStudy from './CaseStudy'
+import NexploreCaseStudy from './NexploreCaseStudy'
 
 export class Portfolio extends Component {
     displayName = Portfolio.name
@@ -50,11 +49,7 @@ export class Portfolio extends Component {
                     />
                 </div>
 
-                <CaseStudy
-                    imagePosition="left"
-                    image={NexploreThumbnail}
-                    referenceUrl="https://www.lucionservices.com/services/lucions-online-risk-management-app-nexgen-integrated-with-bim-technology-allowing-clients-to-access-safety-hazards-information-in-3d-for-accurate-risk-management/"
-                    />
+                <NexploreCaseStudy/>
             </div>
         )
     }
