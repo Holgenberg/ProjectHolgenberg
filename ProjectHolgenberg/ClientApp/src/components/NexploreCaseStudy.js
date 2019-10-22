@@ -34,7 +34,10 @@ class NexploreCaseStudy extends Component {
 
         const nexploreLink = "https://tinyurl.com/y66b5can";
 
-        const caseStudyDescription = "From November 2016 to October 2019, I oversaw a project to develop a 3D scanning solution for Asbestos Surveyors."
+        const caseStudyDescription = "In a joint project between Lucion Services and Northumbria University from November 2016 to October 2019, "
+            + "I oversaw a solution to develop a 3D scanning solution for Asbestos Surveyors. Data-populated 3D Models were hosted online."
+            + " The solution made use of .NET, AWS, Azure DevOps, Javascript, CSS and HTML. The solution also incorporated Machine Learning"
+            + ", OpenGL and a host of other libraries." ;
 
         if (this.state.width > 425) {
             return (
