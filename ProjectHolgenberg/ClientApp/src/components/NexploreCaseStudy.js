@@ -3,7 +3,7 @@ import Row from 'react-bootstrap/Row'
 import Col from 'react-bootstrap/Col'
 import Image from 'react-bootstrap/Image'
 import React, { Component } from 'react'
-import './CaseStudy.css'
+import './NexploreCaseStudy.css'
 import NexGenLogo from '../images/nexgen_logo.png'
 
 class NexploreCaseStudy extends Component {
@@ -34,6 +34,8 @@ class NexploreCaseStudy extends Component {
 
         const nexploreLink = "https://tinyurl.com/y66b5can";
 
+        const caseStudyDescription = "From November 2016 to October 2019, I oversaw a project to develop a 3D scanning solution for Asbestos Surveyors."
+
         if (this.state.width > 425) {
             return (
                 <div>
@@ -45,7 +47,7 @@ class NexploreCaseStudy extends Component {
                                 </a>
                             </Col>
                             <Col>
-                                <p className="case-study-description">Overseeing a project in which surveyors would capture 3D data which would then be hosted in a scale-accurate 3D model online</p>
+                                <p className="nexplore-case-study-description">{caseStudyDescription}</p>
                             </Col>
                         </Row>
                     </Container>
