@@ -3,8 +3,8 @@ import Row from 'react-bootstrap/Row'
 import Col from 'react-bootstrap/Col'
 import Image from 'react-bootstrap/Image'
 import React, { Component } from 'react'
-import './NexploreCaseStudy.css'
-import NexGenLogo from '../images/warden_foreground.png'
+import './CaseStudy.css'
+import WardenLogo from '../images/warden_logo.png'
 
 class WardenCaseStudy extends Component {
     constructor(props) {
@@ -32,7 +32,7 @@ class WardenCaseStudy extends Component {
 
     render() {
 
-        const nexploreLink = "https://play.google.com/store/apps/details?id=com.SandwichArtist.ProjectWarden";
+        const wardenLink = "https://play.google.com/store/apps/details?id=com.SandwichArtist.ProjectWarden";
 
         const caseStudyDescription = "In a joint project between Lucion Services and Northumbria University from November 2016 to October 2019, "
             + "I oversaw a solution to develop a 3D scanning solution for Asbestos Surveyors. Data-populated 3D Models were hosted online."
@@ -45,11 +45,11 @@ class WardenCaseStudy extends Component {
                     <Container>
                         <Row>
                             <Col>
-                                <p className="nexplore-case-study-description">{caseStudyDescription}</p>
+                                <p className="case-study-description">{caseStudyDescription}</p>
                             </Col>
                             <Col>
-                                <a href={nexploreLink}>
-                                    <Image src={NexGenLogo} roundedCircle />
+                                <a href={wardenLink}>
+                                    <Image src={WardenLogo} roundedCircle />
                                 </a>
                             </Col>
                         </Row>
@@ -61,10 +61,10 @@ class WardenCaseStudy extends Component {
         else {
             return (
                 <div className="centre">
-                    <a href={nexploreLink}>
-                        <Image src={NexGenLogo} roundedCircle />
+                    <a href={wardenLink}>
+                        <Image src={WardenLogo} roundedCircle />
                     </a>
-                    <p className="nexplore-case-study-description">{caseStudyDescription}</p>
+                    <p className="case-study-description">{caseStudyDescription}</p>
                 </div>
             )
         }

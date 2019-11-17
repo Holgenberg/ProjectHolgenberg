@@ -3,7 +3,7 @@ import Row from 'react-bootstrap/Row'
 import Col from 'react-bootstrap/Col'
 import Image from 'react-bootstrap/Image'
 import React, { Component } from 'react'
-import './NexploreCaseStudy.css'
+import './CaseStudy.css'
 import NexGenLogo from '../images/nexgen_logo.png'
 
 class NexploreCaseStudy extends Component {
@@ -50,7 +50,7 @@ class NexploreCaseStudy extends Component {
                                 </a>
                             </Col>
                             <Col>
-                                <p className="nexplore-case-study-description">{caseStudyDescription}</p>
+                                <p className="case-study-description">{caseStudyDescription}</p>
                             </Col>
                         </Row>
                     </Container>
@@ -64,7 +64,7 @@ class NexploreCaseStudy extends Component {
                     <a href={nexploreLink}>
                         <Image src={NexGenLogo} roundedCircle />
                     </a>
-                    <p className="nexplore-case-study-description">{caseStudyDescription}</p>
+                    <p className="case-study-description">{caseStudyDescription}</p>
                 </div>
             )
         }
