@@ -34,10 +34,10 @@ class WardenCaseStudy extends Component {
 
         const wardenLink = "https://play.google.com/store/apps/details?id=com.SandwichArtist.ProjectWarden";
 
-        const caseStudyDescription = "In a joint project between Lucion Services and Northumbria University from November 2016 to October 2019, "
-            + "I oversaw a solution to develop a 3D scanning solution for Asbestos Surveyors. Data-populated 3D Models were hosted online."
-            + " The solution made use of .NET, AWS, Azure DevOps, Javascript, CSS and HTML. The solution also incorporated Machine Learning"
-            + ", OpenGL and a host of other libraries.";
+        const caseStudyDescription = "Warden is an application that allows users to review property landlording in the Belfast Area. "
+            + "It is cross platform on Android and iOS devices, developed using C# Xamarin."
+            + " The solution made use of Xamarin, XAML, Azure, MS SQL, MVVM Patterns, Entity Frameworks and WebAPI. The solution also incorporated Lottie"
+            + ", an animation library used by AirBnB.";
 
         if (this.state.width > 425) {
             return (
