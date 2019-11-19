@@ -12,3 +12,12 @@
     background-repeat: no-repeat;
     background-size: cover;
 }
+
+@media (max-width: 426px ) {
+    .Portfolio{
+        overflow: auto;
+        height: 100%;
+    }
+}
+
+
