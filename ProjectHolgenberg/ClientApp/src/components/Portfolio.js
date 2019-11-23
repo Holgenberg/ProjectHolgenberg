@@ -6,6 +6,7 @@ import HamburgerMenu from 'react-hamburger-menu'
 import NavigationMenuContent from './NavigationMenuContent'
 import NexploreCaseStudy from './NexploreCaseStudy'
 import WardenCaseStudy from './WardenCaseStudy'
+import StarlitCaseStudy from './StarlitCaseStudy'
 
 export class Portfolio extends Component {
     displayName = Portfolio.name
@@ -52,6 +53,7 @@ export class Portfolio extends Component {
 
                 <NexploreCaseStudy />
                 <WardenCaseStudy />
+                <StarlitCaseStudy />
             </div>
         )
     }
