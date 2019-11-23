@@ -32,10 +32,10 @@ class StarlitCaseStudy extends Component {
 
     render() {
 
-        const caseStudyDescription = "In a joint project between Lucion Services and Northumbria University from November 2016 to October 2019, "
-            + "I oversaw a solution to develop a 3D scanning solution for Asbestos Surveyors. Data-populated 3D Models were hosted online."
-            + " The solution made use of .NET, AWS, Azure DevOps, Javascript, CSS and HTML. The solution also incorporated Machine Learning"
-            + ", OpenGL and a host of other libraries.";
+        const caseStudyDescription = "Starlit was my first self-taught project that led me to become a software developer. "
+            + "It was an endless runner game developed in Unity 3D with C# for scripting. I also designed all the sprites for the game using"
+            + " GIMP. The serialized APK was listed on the Google Play Store for multiple years until it was discontinued due to renumeration"
+            + " legislation involving ad's.";
 
         if (this.state.width > 425) {
             return (
