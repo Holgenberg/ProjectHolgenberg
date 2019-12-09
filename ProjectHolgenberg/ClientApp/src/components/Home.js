@@ -4,6 +4,7 @@ import './HamburgerMenu.css'
 import CheeseburgerMenu from 'cheeseburger-menu'
 import HamburgerMenu from 'react-hamburger-menu'
 import NavigationMenuContent from './NavigationMenuContent'
+import SocialFollow from './SocialFollow'
 
 export class Home extends Component {
     displayName = Home.name
@@ -51,6 +52,8 @@ export class Home extends Component {
                     <h1>Alexei Holgate</h1>
                     <p>Developer, Traveller, Engineer, Photographer, Guitarist from Newcastle upon Tyne.</p>
                 </div>
+
+                <SocialFollow />
             </div>
         );
     }
