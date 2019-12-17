@@ -1,0 +1,17 @@
+﻿.Skills {
+    min-height: 100%;
+    width: 100%;
+    height: auto;
+    position: fixed;
+    top: 0;
+    left: 0;
+    margin: 0;
+    padding: 0;
+    background-image: url("../images/skills_bridge_background.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100%;
+    overflow: auto;
+    padding-bottom: 15px;
+}
