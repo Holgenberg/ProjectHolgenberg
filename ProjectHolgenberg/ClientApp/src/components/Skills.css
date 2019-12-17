@@ -12,6 +12,15 @@
     background-repeat: no-repeat;
     background-size: cover;
     height: 100%;
-    overflow: auto;
-    padding-bottom: 15px;
+}
+
+.Content {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 40px;
+    font-family: 'Roboto Slab', serif;
+    color: white;
 }
