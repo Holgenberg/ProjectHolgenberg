@@ -19,6 +19,10 @@ class NavigationMenuContent extends Component {
             {
                 "to": "/skills/",
                 "name": "Skills"
+            },
+            {
+                "to": "/contact/",
+                "name": "Contact"
             }
         ];
     }
