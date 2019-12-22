@@ -14,6 +14,12 @@
     height: 100%;
 }
 
+@media (max-width: 426px){
+    .Skills{
+        background-image: url("../images/skills_bridge_background_mobile.jpg");
+    }
+}
+
 .Content {
     height: 100%;
     display: flex;
