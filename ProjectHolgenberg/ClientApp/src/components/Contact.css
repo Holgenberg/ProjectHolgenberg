@@ -11,7 +11,22 @@
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+}
+
+.Contact-content {
     height: 100%;
-    overflow: auto;
-    padding-bottom: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 40px;
+    font-family: 'Roboto Slab', serif;
+    color: white;
+}
+
+@media (min-width: 650px ) {
+    .Contact-content {
+        align-items: flex-end;
+        justify-content: center;
+    }
 }
