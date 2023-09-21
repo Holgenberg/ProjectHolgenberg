@@ -1,0 +1,6 @@
+{
+  "dependencies": {
+    "cheeseburger-menu": "^0.0.14",
+    "react-hamburger-menu": "^1.2.1"
+  }
+}
