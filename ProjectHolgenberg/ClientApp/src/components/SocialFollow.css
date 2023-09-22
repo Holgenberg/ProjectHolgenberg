@@ -2,4 +2,9 @@
     position: fixed;
     bottom: 3px;
     right: 3px;
+    margin-right: 2px;
+}
+
+.social-link {
+    margin-right: 8px; 
 }
