@@ -35,7 +35,6 @@ class NavigationMenuContent extends Component {
                         <Link to={link.to} onClick={this.props.closeCallback}>{link.name}</Link>
                     </div>
                 )}
-                <p className="hint">Let's get to know eachother &#128516;</p>
             </div>
         )
     }
