@@ -8,6 +8,7 @@ import CaseStudy from './CaseStudy'
 import NexGenLogo from '../images/nexgen_logo.png'
 import WardenLogo from '../images/warden_logo.png'
 import StarlitLogo from '../images/starlit_logo.png'
+import GPSCAMLogo from '../images/gps_cam_logo.png'
 
 export class Portfolio extends Component {
 	displayName = Portfolio.name
@@ -55,14 +56,17 @@ export class Portfolio extends Component {
 				<div class="container">
 					<div class="row">
 						<div class="col-4">
+							<CaseStudy caseStudyImage={GPSCAMLogo} />
+						</div>
+						<div class="col-4">
 							<CaseStudy caseStudyImage={NexGenLogo} />
 						</div>
 						<div class="col-4">
 							<CaseStudy caseStudyImage={WardenLogo} />
 						</div>
-						<div class="col-4">
-							<CaseStudy caseStudyImage={StarlitLogo} />
-						</div>
+					</div>
+					<div class="col-3">
+						<CaseStudy caseStudyImage={StarlitLogo} />
 					</div>
 				</div>
 			</div>

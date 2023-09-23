@@ -5,7 +5,7 @@ const CaseStudy = ({ row, column, caseStudyImage }) => {
     
     return (
         <div className="case-study grid-item">
-            <Image src={caseStudyImage} roundedCircle />
+            <Image src={caseStudyImage} />
         </div>
     );
 };
