@@ -9,7 +9,7 @@ import NexGenLogo from '../images/nexgen_logo.png'
 import WardenLogo from '../images/warden_logo.png'
 import StarlitLogo from '../images/starlit_logo.png'
 import GPSCAMLogo from '../images/gps_cam_logo.png'
-import DIGSLogo from '../images/DIGSIcon.png'
+import DIGGSLogo from '../images/DIGGSIcon.png'
 
 export class Portfolio extends Component {
 	displayName = Portfolio.name
@@ -57,7 +57,10 @@ export class Portfolio extends Component {
 				<div class="container">
 					<div class="row">
 						<div class="col-4">
-							<CaseStudy caseStudyImage={DIGSLogo} />
+							<CaseStudy caseStudyImage={DIGGSLogo}
+								title="Dontyne Integrated Gear Gauging System"
+								brief="Networked Gear Inspection Solution connected to Renishaw Equator™s"
+							/>
 						</div>
 						<div class="col-4">
 							<CaseStudy caseStudyImage={GPSCAMLogo} />

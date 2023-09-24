@@ -2,7 +2,7 @@
 import Image from 'react-bootstrap/Image';
 import './CaseStudy.css';
 
-const CaseStudy = ({ caseStudyImage }) => {
+const CaseStudy = ({ caseStudyImage, title, brief}) => {
    
     return (
         <div>
@@ -12,8 +12,8 @@ const CaseStudy = ({ caseStudyImage }) => {
                     <Image src={caseStudyImage} className="imageStyle" />
                 </div>
                 <div className="textContainer">
-                    <h2>Title</h2>
-                    <p>Sentence goes here.</p>
+                    <h2>{title}</h2>
+                    <p>{brief}</p>
                     <ul>
                         <li>Bullet point 1</li>
                         <li>Bullet point 2</li>
