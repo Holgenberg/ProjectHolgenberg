@@ -31,6 +31,9 @@ export class Portfolio extends Component {
 	}
 
 	render() {
+
+		const diggsBulletPoints = ["System Administration", "Network Engineering", "ISO Standards"];
+
 		return (
 			<div className="Portfolio">
 				<link href="https://fonts.googleapis.com/css?family=Roboto+Slab&display=swap" rel="stylesheet"></link>
@@ -60,21 +63,26 @@ export class Portfolio extends Component {
 							<CaseStudy caseStudyImage={DIGGSLogo}
 								title="Dontyne Integrated Gear Gauging System"
 								brief="Networked Gear Inspection Solution connected to Renishaw Equator™s"
+								bulletPoints={diggsBulletPoints}
 							/>
 						</div>
 						<div class="col-4">
-							<CaseStudy caseStudyImage={GPSCAMLogo} />
+							<CaseStudy caseStudyImage={GPSCAMLogo}
+								bulletPoints={diggsBulletPoints}/>
 						</div>
 						<div class="col-4">
-							<CaseStudy caseStudyImage={NexGenLogo} />
+							<CaseStudy caseStudyImage={NexGenLogo}
+								bulletPoints={diggsBulletPoints}/>
 						</div>						
 					</div>
 					<div class="row d-flex justify-content-center">
 						<div class="col-4">
-							<CaseStudy caseStudyImage={WardenLogo} />
+							<CaseStudy caseStudyImage={WardenLogo}
+								bulletPoints={diggsBulletPoints}/>
 						</div>
 						<div class="col-4">
-							<CaseStudy caseStudyImage={StarlitLogo} />
+							<CaseStudy caseStudyImage={StarlitLogo}
+								bulletPoints={diggsBulletPoints}/>
 						</div>
 					</div>
 				</div>

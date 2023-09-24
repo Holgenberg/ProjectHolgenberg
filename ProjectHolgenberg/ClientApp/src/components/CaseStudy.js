@@ -2,7 +2,7 @@
 import Image from 'react-bootstrap/Image';
 import './CaseStudy.css';
 
-const CaseStudy = ({ caseStudyImage, title, brief}) => {
+const CaseStudy = ({ caseStudyImage, title, brief, bulletPoints}) => {
    
     return (
         <div>
@@ -15,9 +15,9 @@ const CaseStudy = ({ caseStudyImage, title, brief}) => {
                     <h2>{title}</h2>
                     <p>{brief}</p>
                     <ul>
-                        <li>Bullet point 1</li>
-                        <li>Bullet point 2</li>
-                        <li>Bullet point 3</li>
+                        {bulletPoints.map((item, index) => (
+                            <li key={index}>{item}</li>
+                        ))}
                     </ul>
                 </div>
             </div>
