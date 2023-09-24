@@ -1,16 +1,17 @@
-﻿.centre {
-    text-align:center;
+﻿.topRegionStyle {
+	height: 5vh;
+	background-color: transparent;
 }
 
-.case-study-description {
-    font-family: 'Roboto Slab', serif;
-    color: white;
-
-    padding-top: 20px;
+.caseStudyStyle {
+	height: 37.5vh;
+	background-color: rgba(0, 0, 0, 0.8);
+	display: flex;
+	justify-content: center;
+	align-items: center;
 }
 
-@media only screen and (min-width: 426px){
-    .case-study-description{
-        padding-top: 50px;
-    }
+.imageStyle {
+	max-width: 100%; 
+	max-height: 100%;
 }
