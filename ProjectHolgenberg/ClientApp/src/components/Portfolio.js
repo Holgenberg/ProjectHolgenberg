@@ -34,6 +34,7 @@ export class Portfolio extends Component {
 
 		const diggsBulletPoints = ["Network Engineering", "Windows Presentation Foundation", "ISO Standards"];
 		const gpsCamBulletPoints = ["Multithreading", "Opencascade", "C++/CLI"]
+		const nexPloreBulletPoints = ["CD/CI", "Amazon Web Services", "REST API's"]
 
 		return (
 			<div className="Portfolio">
@@ -75,7 +76,9 @@ export class Portfolio extends Component {
 						</div>
 						<div class="col-4">
 							<CaseStudy caseStudyImage={NexGenLogo}
-								bulletPoints={diggsBulletPoints}/>
+								title="NexPlore"
+								brief="3D Asbestos Risk Visualization & Management Web App"
+								bulletPoints={nexPloreBulletPoints}/>
 						</div>						
 					</div>
 					<div class="row d-flex justify-content-center">
