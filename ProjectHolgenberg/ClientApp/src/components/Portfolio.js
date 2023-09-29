@@ -32,7 +32,8 @@ export class Portfolio extends Component {
 
 	render() {
 
-		const diggsBulletPoints = ["System Administration", "Network Engineering", "ISO Standards"];
+		const diggsBulletPoints = ["Network Engineering", "Windows Presentation Foundation", "ISO Standards"];
+		const gpsCamBulletPoints = ["Multithreading", "Opencascade", "C++/CLI"]
 
 		return (
 			<div className="Portfolio">
@@ -61,14 +62,16 @@ export class Portfolio extends Component {
 					<div class="row">
 						<div class="col-4">
 							<CaseStudy caseStudyImage={DIGGSLogo}
-								title="Dontyne Integrated Gear Gauging System"
+								title="DIGGS"
 								brief="Networked Gear Inspection Solution connected to Renishaw Equator™s"
 								bulletPoints={diggsBulletPoints}
 							/>
 						</div>
 						<div class="col-4">
 							<CaseStudy caseStudyImage={GPSCAMLogo}
-								bulletPoints={diggsBulletPoints}/>
+								title="GPS CAM"
+								brief="Computer Aided Manufacturing Solution for 5-Axis CNC of Gears"
+								bulletPoints={gpsCamBulletPoints}/>
 						</div>
 						<div class="col-4">
 							<CaseStudy caseStudyImage={NexGenLogo}
