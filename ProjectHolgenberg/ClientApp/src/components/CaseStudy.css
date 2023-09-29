@@ -12,7 +12,7 @@
 
 .imageContainer {
 	flex: 1; /* Takes up half of the container width */
-	padding: 20px; /* Adjust as needed for spacing */
+	padding: 10px; /* Adjust as needed for spacing */
 }
 
 .imageStyle {
@@ -23,26 +23,26 @@
 
 .textContainer {
 	flex: 1; /* Takes up the other half of the container width */
-	padding: 20px; /* Adjust as needed for spacing */
+	padding: 10px; /* Adjust as needed for spacing */
 	color: white;
+	text-align: center;
 }
 
 .textContainer h2 {
-	font-size: 18px; /* Adjust as needed */
+	font-size: 16px; /* Adjust as needed */
 	margin-bottom: 10px; /* Adjust as needed for spacing */
 }
 
 .textContainer p {
-	font-size: 14px; /* Adjust as needed */
+	font-size: 12px; /* Adjust as needed */
 	margin-bottom: 10px; /* Adjust as needed for spacing */
 }
 
 .textContainer ul {
 	list-style-type: disc; /* You can use 'disc' or 'circle' for bullet points */
-	margin-left: 20px; /* Adjust as needed for indentation */
 }
 
 .textContainer li {
-	font-size: 14px; /* Adjust as needed */
+	font-size: 12px; /* Adjust as needed */
 	margin-bottom: 5px; /* Adjust as needed for spacing between bullet points */
 }
