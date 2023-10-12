@@ -47,10 +47,6 @@ export class Skills extends Component {
                         animationDuration={0.5}
                     />
                 </div>
-
-                <div className="Content">
-                    Just a page of things I do...
-                </div>
             </div>
         )
     }
