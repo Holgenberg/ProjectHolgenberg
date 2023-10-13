@@ -30,6 +30,7 @@ export class Skills extends Component {
 
 		const programmingLanguageSkills = ["C#", "Python", "C++", "Javascript", "C", "PHP"];
 		const microsoftTechnologySkills = [".NET", "ASP.NET", "Xamarin", "WPF", "Microsoft SQL"]
+		const cloudSkills = ["Azure DevOps", "Resource Groups", "AWS EC2", "Elastic Beanstalk", "S3", "CodeDeploy"]
 
 		return (
 			<div className="Skills">
@@ -58,6 +59,8 @@ export class Skills extends Component {
 					skills={programmingLanguageSkills} />
 				<SkillsContainer title="Microsoft Technologies"
 					skills={microsoftTechnologySkills} />
+				<SkillsContainer title="Cloud"
+					skills={cloudSkills} />
 			</div>
 		)
 	}
