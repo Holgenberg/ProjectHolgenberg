@@ -4,50 +4,58 @@ import CheeseburgerMenu from 'cheeseburger-menu'
 import HamburgerMenu from 'react-hamburger-menu'
 import NavigationMenuContent from './NavigationMenuContent'
 import './Skills.css'
+import './SkillsContainer'
+import SkillsContainer from './SkillsContainer'
 
 export class Skills extends Component {
-    displayName = Skills.name
+	displayName = Skills.name
 
-    constructor(props) {
-        super(props)
+	constructor(props) {
+		super(props)
 
-        this.state = {
-            menuOpen: false,
-        };
-    }
+		this.state = {
+			menuOpen: false,
+		};
+	}
 
-    openMenu() {
-        this.setState({ menuOpen: true })
-    }
+	openMenu() {
+		this.setState({ menuOpen: true })
+	}
 
-    closeMenu() {
-        this.setState({ menuOpen: false })
-    }
+	closeMenu() {
+		this.setState({ menuOpen: false })
+	}
 
-    render() {
-        return (
-            <div className="Skills">
-                <link href="https://fonts.googleapis.com/css?family=Roboto+Slab&display=swap" rel="stylesheet"></link>
-                <CheeseburgerMenu
-                    isOpen={this.state.menuOpen}
-                    closeCallback={this.closeMenu.bind(this)}>
-                    <NavigationMenuContent closeCallback={this.closeMenu.bind(this)} />
-                </CheeseburgerMenu>
+	render() {
 
-                <div className="Hamburger-menu-button-placement">
-                    <HamburgerMenu
-                        isOpen={this.state.menuOpen}
-                        menuClicked={this.openMenu.bind(this)}
-                        width={32}
-                        height={24}
-                        strokeWidth={3}
-                        rotate={0}
-                        color='white'
-                        borderRadius={0}
-                        animationDuration={0.5}
-                    />
-                </div>
-            </div>
-        )
-    }
+		const programmingLanguageSkills = ["C#", "Python", "C++", "Javascript", "C", "PHP"];
+
+		return (
+			<div className="Skills">
+				<link href="https://fonts.googleapis.com/css?family=Roboto+Slab&display=swap" rel="stylesheet"></link>
+				<CheeseburgerMenu
+					isOpen={this.state.menuOpen}
+					closeCallback={this.closeMenu.bind(this)}>
+					<NavigationMenuContent closeCallback={this.closeMenu.bind(this)} />
+				</CheeseburgerMenu>
+
+				<div className="Hamburger-menu-button-placement">
+					<HamburgerMenu
+						isOpen={this.state.menuOpen}
+						menuClicked={this.openMenu.bind(this)}
+						width={32}
+						height={24}
+						strokeWidth={3}
+						rotate={0}
+						color='white'
+						borderRadius={0}
+						animationDuration={0.5}
+					/>
+				</div>
+
+				<SkillsContainer title="Programming Languages"
+					skills={programmingLanguageSkills} />
+			</div>
+		)
+	}
 }
