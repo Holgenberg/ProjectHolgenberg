@@ -31,7 +31,8 @@ export class Skills extends Component {
 		const programmingLanguageSkills = ["C#", "Python", "C++", "Javascript", "C", "PHP"];
 		const microsoftTechnologySkills = [".NET", "ASP.NET", "Xamarin", "WPF", "Microsoft SQL"]
 		const cloudSkills = ["Azure DevOps", "Resource Groups", "AWS EC2", "Elastic Beanstalk", "S3", "CodeDeploy"]
-		const webSkills = ["HTML", "CSS", "React.js", "WebGL"]
+		const webSkills = ["RESTful APIs", "HTML", "CSS", "React.js", "WebGL"]
+		const organisationalPractices = ["Scrum", "Unit Testing", "TDD/BDD", "Documentation Writing"]
 
 		return (
 			<div className="Skills">
@@ -64,6 +65,8 @@ export class Skills extends Component {
 					skills={cloudSkills} />
 				<SkillsContainer title="Web"
 					skills={webSkills} />
+				<SkillsContainer title="Organisational Skills"
+					skills={organisationalPractices} />
 			</div>
 		)
 	}
