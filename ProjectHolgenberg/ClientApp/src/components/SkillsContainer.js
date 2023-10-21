@@ -6,10 +6,10 @@ const SkillsContainer = ({ title, skills }) => {
     return (
         <div>
             <div className="topRegionStyle" />
-            <div className="caseStudyContainer">
+            <div className="skillsContainer">
                 <div className="textContainer">
                     <h2>{title}</h2>
-                    <ul>
+                    <ul className="centered-bullets">
                         {skills.map((item, index) => (
                             <li key={index}>{item}</li>
                         ))}

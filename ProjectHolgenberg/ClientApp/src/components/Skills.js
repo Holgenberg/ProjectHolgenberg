@@ -58,18 +58,36 @@ export class Skills extends Component {
 					/>
 				</div>
 
-				<SkillsContainer title="Programming Languages"
-					skills={programmingLanguageSkills} />
-				<SkillsContainer title="Microsoft Technologies"
-					skills={microsoftTechnologySkills} />
-				<SkillsContainer title="Cloud"
-					skills={cloudSkills} />
-				<SkillsContainer title="Web"
-					skills={webSkills} />
-				<SkillsContainer title="Organisational Skills"
-					skills={organisationalPractices} />
-				<SkillsContainer title="Other Skills"
-					skills={otherSkills} />
+				<div className="container">
+					<div className="row">
+						<div className="col-4">
+							<SkillsContainer title="Programming Languages"
+								skills={programmingLanguageSkills} />
+						</div>
+						<div className="col-4">
+							<SkillsContainer title="Microsoft Technologies"
+								skills={microsoftTechnologySkills} />
+						</div>
+						<div className="col-4">
+							<SkillsContainer title="Cloud"
+								skills={cloudSkills} />
+						</div>
+					</div>
+					<div className="row">
+						<div className="col-4">
+							<SkillsContainer title="Web"
+								skills={webSkills} />
+						</div>
+						<div className="col-4">
+							<SkillsContainer title="Organisational Skills"
+								skills={organisationalPractices} />
+						</div>
+						<div className="col-4">
+							<SkillsContainer title="Other Skills"
+								skills={otherSkills} />
+						</div>
+					</div>
+				</div>
 			</div>
 		)
 	}

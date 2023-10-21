@@ -3,7 +3,7 @@
 	background-color: transparent;
 }
 
-.caseStudyContainer {
+.skillsContainer {
 	display: flex;
 	align-items: center;
 	background-color: rgba(0, 0, 0, 0.8);
@@ -34,4 +34,18 @@
 .textContainer li {
 	font-size: 12px; /* Adjust as needed */
 	margin-bottom: 5px; /* Adjust as needed for spacing between bullet points */
+}
+
+.centered-bullets {
+	list-style: none; /* Remove default bullet points */
+	padding-left: 0; /* Remove default left padding for the list */
+	margin-left: 1em;
+}
+
+.centered-bullets li::before {
+    content: "\2022"; /* Unicode character for a bullet point (•) */
+    color: #000; /* Change the color of the bullet point */
+    display: inline-block; /* Make it inline-block to center it */
+    width: 1em; /* Adjust the width to control spacing */
+    margin-left: -1em; /* Offset the bullet point to center it */
 }
