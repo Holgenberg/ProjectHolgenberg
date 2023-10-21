@@ -50,7 +50,7 @@ export class Home extends Component {
 
                 <div className="Home-content">
                     <h1>Alexei Holgate</h1>
-                    <p>Developer, Traveller, Engineer, Photographer, Guitarist from Newcastle upon Tyne.</p>
+                    <p>IT and Software Development Services Based in Newcastle upon Tyne</p>
                 </div>
 
                 <SocialFollow />
