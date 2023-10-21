@@ -33,6 +33,7 @@ export class Skills extends Component {
 		const cloudSkills = ["Azure DevOps", "Resource Groups", "AWS EC2", "Elastic Beanstalk", "S3", "CodeDeploy"]
 		const webSkills = ["RESTful APIs", "HTML", "CSS", "React.js", "WebGL"]
 		const organisationalPractices = ["Scrum", "Unit Testing", "TDD/BDD", "Documentation Writing"]
+		const otherSkills = ["Git/GitHub", "OpenCascade", "Unity 3D"]
 
 		return (
 			<div className="Skills">
@@ -67,6 +68,8 @@ export class Skills extends Component {
 					skills={webSkills} />
 				<SkillsContainer title="Organisational Skills"
 					skills={organisationalPractices} />
+				<SkillsContainer title="Other Skills"
+					skills={otherSkills} />
 			</div>
 		)
 	}
