@@ -24,7 +24,7 @@ const SkillsContainerCollection = () => {
 	const cloudSkills = ["Azure DevOps", "Resource Groups", "AWS EC2", "Elastic Beanstalk", "S3", "CodeDeploy"]
 	const webSkills = ["RESTful APIs", "HTML", "CSS", "React.js", "WebGL"]
 	const organisationalPractices = ["Scrum", "Unit Testing", "TDD/BDD", "Documentation Writing"]
-	const otherSkills = ["Git/GitHub", "OpenCascade", "Unity 3D"]
+	const otherSkills = ["Git/GitHub", "OpenCV","OpenCascade", "Unity 3D"]
 
 	if (windowWidth > 768) {
 		return (
