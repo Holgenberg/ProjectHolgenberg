@@ -5,6 +5,7 @@ import WardenLogo from '../images/warden_logo.png'
 import StarlitLogo from '../images/starlit_logo.png'
 import GPSCAMLogo from '../images/gps_cam_logo.png'
 import DIGGSLogo from '../images/DIGGSIcon.png'
+import ImmersiveStudioLogo from '../images/immersive_studio_image.png'
 
 const CaseStudyCollection = () => {
 	const [windowWidth, setWindowWidth] = useState(window.innerWidth);
@@ -24,6 +25,7 @@ const CaseStudyCollection = () => {
 		};
 	}, []);
 
+	const immersiveStudioBulletPoints = ["OpenCV", "C++ 20", "Boost"];
 	const diggsBulletPoints = ["Network Engineering", "Windows Presentation Foundation", "ISO Standards"];
 	const gpsCamBulletPoints = ["Multithreading", "Opencascade", "C++/CLI"]
 	const nexPloreBulletPoints = ["CD/CI", "Amazon Web Services", "REST API's"]
@@ -34,6 +36,13 @@ const CaseStudyCollection = () => {
 		return (
 			<div className="container">
 				<div className="row">
+					<div className="col-4">
+						<CaseStudy caseStudyImage={ImmersiveStudioLogo}
+							title="Immersive Studio"
+							brief="Augmented reality environments integrating multiple senses for educational purposes"
+							bulletPoints={immersiveStudioBulletPoints}
+						/>
+					</div>
 					<div className="col-4">
 						<CaseStudy caseStudyImage={DIGGSLogo}
 							title="DIGGS"
@@ -46,15 +55,15 @@ const CaseStudyCollection = () => {
 							title="GPS CAM"
 							brief="Computer Aided Manufacturing Solution for 5-Axis CNC of Gears"
 							bulletPoints={gpsCamBulletPoints} />
-					</div>
+					</div>					
+				</div>
+				<div className="row">
 					<div className="col-4">
 						<CaseStudy caseStudyImage={NexGenLogo}
 							title="NexPlore"
 							brief="3D Asbestos Risk Visualization & Management Web App"
 							bulletPoints={nexPloreBulletPoints} />
 					</div>
-				</div>
-				<div className="row d-flex justify-content-center">
 					<div className="col-4">
 						<CaseStudy caseStudyImage={WardenLogo}
 							title="Warden"
@@ -75,6 +84,10 @@ const CaseStudyCollection = () => {
 	else {
 		return (
 			<div>
+				<CaseStudy caseStudyImage={ImmersiveStudioLogo}
+					title="Immersive Studio"
+					brief="Augmented reality environments integrating multiple senses for educational purposes"
+					bulletPoints={immersiveStudioBulletPoints} />				
 				<CaseStudy caseStudyImage={DIGGSLogo}
 					title="DIGGS"
 					brief="Networked Gear Inspection Solution connected to Renishaw Equator™s"
